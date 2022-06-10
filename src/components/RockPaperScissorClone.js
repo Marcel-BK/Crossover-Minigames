@@ -1,4 +1,6 @@
 import React, { useState } from 'react'
+import { Link } from "react-router-dom";
+import { Row } from "react-bootstrap";
 
 const RockPaperScissorClone = () => {
   const [userhand, setuserhand] = useState();
@@ -42,6 +44,14 @@ const RockPaperScissorClone = () => {
   }
 
   return (
+    <>
+    <div className='container-fluid'>
+        
+        <Row className='lp-head py-3 mb-3'>
+            <Link className='home-button mx-3' to={`/`}><i className='bi bi-house-door-fill'></i></Link>
+            <h1 className='lp-header mx-auto'>ROCK PAPER SCISSORS</h1>
+        </Row>
+      </div>
     <div>
       <div>Choose your weapon:</div>
       <br />
@@ -66,6 +76,7 @@ const RockPaperScissorClone = () => {
         : <div>Result: {determineWinner()} wins</div>
       }
     </div>
+    </>
   );
 }
 
