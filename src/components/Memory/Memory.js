@@ -21,9 +21,7 @@ const Memory = () => {
             }
             setMoves((moves) => moves + 1);
           } else {
-            //setOpenCards([index]);
-            console.log('hi');
-            //card.setAttribute('src', name);
+            console.log('no more moves');
           }
         };
 
