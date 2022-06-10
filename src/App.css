@@ -83,3 +83,37 @@ body {
 .red {
     background-color: #6666 !important;
 }
+
+.col {
+    color: green;
+}
+
+.row {
+    color: red;
+}
+
+/*---------Memory---------------------*/
+
+.memory-field {
+    display: flex;
+    justify-content: center;
+}
+
+.memory-container {
+    height: 700px;
+    width: 1000px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.memory-card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    height: 300px;
+    margin: 20px;
+    width: 25%;
+    border: solid 3px black;
+    border-radius: 10px;
+}
