@@ -5,23 +5,19 @@ import { Routes, Route } from 'react-router-dom';
 import Minigames from './components/Minigames';
 import Memory from './components/Memory';
 import TicTacToe from './components/TicTacToe';
+// import RockPaperScissorClone from './components/RockPaperScissorClone'
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        {/* <Header /> */}
-      </header>
       <main>
         <Routes>
             <Route path='/' element={<Minigames />} />
             <Route path='/tictactoe' element={<TicTacToe />} />
             <Route path='/memory' element={<Memory />} />
+            {/* <Route path='/rockpaperscissors' element={<RockPaperScissorClone />} /> */}
         </Routes>
     </main>
-    <footer>
-        {/* <Footer /> */}
-    </footer>
     </div>
   );
 }

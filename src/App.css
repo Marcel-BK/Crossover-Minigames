@@ -1,7 +1,85 @@
-.col {
-    color: green;
+:root {
+    --white: #F6F4F2;
+    --bg-color: #213F6D;
+    --primary: #7F9DC0;
+    --secondary: #7E7E9D;
+    --link-color: #5BCAE7;
 }
 
-.row {
-    color: red;
+* {
+  box-sizing: border-box;
+}
+
+body {
+    background-color: var(--bg-color);
+    color: var(--white);
+}
+
+.card {
+  border: solid 0.2rem var(--secondary);
+  border-radius: 0.5rem;
+  box-shadow: #7E7E9DBF 0 0.5rem;
+  overflow: hidden;
+  width: 20rem;
+  height: 20rem;
+}
+
+.card:hover {
+  border: solid 0.2rem var(--link-color);
+  border-radius: 0.5rem;
+  box-shadow: #5BCAE7BF 0 0.5rem;
+  width: 20rem;
+  height: 20rem;
+}
+
+.card:active {
+  border: solid 0.2rem var(--link-color);
+  border-radius: 0.5rem;
+  box-shadow: 0 0;
+  transform: translateY(0.5rem);
+  width: 20rem;
+  height: 20rem;
+}
+
+.card-header, .card-body {
+  background-color: var(--primary);
+  border: none;
+}
+
+.lp-head {
+    color: var(--white);
+    background-color: var(--primary);
+}
+
+.home-button {
+    color: var(--white);
+    width: 3rem;
+    font-size: 2rem;
+}
+
+.home-button:hover {
+    color: var(--link-color);
+    width: 3rem;
+    font-size: 2rem;
+}
+
+.lp-header {
+    width: 30rem;
+}
+
+.lp-card {
+    width: 20rem;
+    text-decoration: none;
+}
+
+.lp-title {
+  color: var(--white);
+}
+
+.lp-img {
+  width: 12rem;
+}
+
+.red {
+    background-color: #6666 !important;
 }
