@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
 import Images from './Images';
 import FlipSide from './Images/FlipSide.jpg';
+import { Link } from "react-router-dom";
+import { Row } from "react-bootstrap";
 
 const Memory = () => {
     const [moves, setMoves] = useState(0);
@@ -26,6 +28,15 @@ const Memory = () => {
         };
 
     return (
+        <>
+        <div className='container-fluid'>
+        
+        <Row className='lp-head py-3 mb-3'>
+            <Link className='home-button mx-3' to={`/`}><i className='bi bi-house-door-fill'></i></Link>
+            <h1 className='lp-header mx-auto'>MEMORY</h1>
+        </Row>
+        </div>
+
         <div className='memory-field'>
             <div className='memory-container'>
                 {Images
@@ -39,6 +50,7 @@ const Memory = () => {
                 })}
             </div>
         </div>
+        </>
     );
 }
 

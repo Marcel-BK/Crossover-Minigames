@@ -17,8 +17,7 @@ function App() {
             <Route path='/memory' element={<Memory />} />
             {/* <Route path='/rockpaperscissors' element={<RockPaperScissorClone />} /> */}
         </Routes>
-        <Memory />
-    </main>
+        </main>
     </div>
   );
 }

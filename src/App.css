@@ -80,18 +80,6 @@ body {
   width: 12rem;
 }
 
-.red {
-    background-color: #6666 !important;
-}
-
-.col {
-    color: green;
-}
-
-.row {
-    color: red;
-}
-
 /*---------Memory---------------------*/
 
 .memory-field {
